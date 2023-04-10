@@ -7,6 +7,14 @@ This is a tutorial for incoming 15L students. The following instruction includes
 ## Install Visual Studio Code
 1. Use this [link](https://code.visualstudio.com/) to install and follow the instruction on this page.
 The following is a screenshot of an opened-VScode page. After your installation, the opened-VScode should be like this.
-![image](vsCode.png)
+![image](vsCode2.png)
 
-## 
+## Remotely connecting
+image of ssh
+image of what we will get
+image of entering password
+image of result
+
+
+## Run some command
+image of running command 
