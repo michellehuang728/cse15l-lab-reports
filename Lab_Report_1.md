@@ -13,9 +13,9 @@ The following is a screenshot of an opened-VScode page. After your installation,
 ## Remotely connecting
 1. Open the terminal, type in the following command after the bash: "ssh cs15lsp23zz@ieng6.ucsd.edu", replace the "zz" with the two characters in your own account. Then the terinal will ask for your password.
 (If it is your first time for remote connection, your computer may have error message: 
-The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+"The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
-Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Are you sure you want to continue connecting (yes/no/[fingerprint])?"
 Simply Type in yes. Since this is not my first time to conduct remoate connect, I did not show this here.)
 
 ![image](ssh.png)
