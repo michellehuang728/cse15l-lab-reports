@@ -4,8 +4,42 @@ In part 2, I will show the process of debugging.
 In part 3, I will summarize and reflection on the new things that I learnt in the past two weeks.
 
 ## PART1: Write a web-server
-![image](URL.png)
-![image](StringServer.png)
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    String new_String = "";
+
+    public String handleRequest(URI url) {
+        System.out.println("Path: " + url.getPath());
+        if (url.getPath().contains("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                new_String +=parameters[1]+"\n";
+                return new_String;
+            }
+        }
+        return "404 Not Found!";
+        
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 
 ![image](hello.png)
 The main method in the StringServer is first called, where we passed the port number and server is started. Then the handleRequest method in the class Handler is called, it takes in the URL `http://localhost:4000/add-message?s=Hello` and shows the string "hello" on the webpage. In this case, the argument we passed in is 4000 in a string for port number in main method. Also, another argument is URL `http://localhost:4000/add-message?s=Hello` we passed in for handleRequest method in Handler class.  The newString changed from empty string to `Hello`.
