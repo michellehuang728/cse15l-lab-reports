@@ -2,7 +2,7 @@ This is week 7 lab report 4. We want to use vim to change a file and then commit
 
 # Log in
 First of all, I log into the ieng6 as usual using `ssh cs15lsp23np@ieng6.ucsd.edu`.
-![image](ssh)
+![image](ssh.png)
 
 # Clone repository
 Then, I clone my fork of repository from my github account. The command line is `git clone https://github.com/michellehuang728/lab7.git`.
@@ -29,7 +29,7 @@ Key pressed:`<esc>` to exit insert mode.
 ![image](esc.png)
 Key pressed: `:wq` to exit the vim mode.
 ![image](wq.png)
-![image](vim after.png)
+![image](vim_after.png)
 
 # Run test after changing
 Then, I run the test by `<up><up><up><up>`(because I've write this command before) to get to the command `bash test.sh`. The test pass.
