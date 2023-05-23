@@ -41,3 +41,4 @@ Then I commit the changes to the github by enter `git commit` in terminal. The v
 ![image](git_commit2)
 Then I push the changes to the git hub. The result shows that the file in the github is also changed.
 ![image](gitpush)
+![image](github)
